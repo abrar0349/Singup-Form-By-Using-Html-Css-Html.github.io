@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+<div class = "profile">
+<img src="" alt="">
+<input type="file" value = "set profile" class = "setPic">
+
+<center><h1 id = "userName">Abrar khan</h1></center>
+  
+<center><h2>About Me</h2></center>
+
+<p id = "detail"></p>
+
+</div>
+
+<script src = "JavaSingUp.js"></script>
+<script>
+
+var urlParms = new URLSearchParams(window.location.search);
+var userString = decodeURIComponent(urlParms.get('user'));
+var user = JSON.parse(userString);
+console.log(user)
+
+document.getElementById('userName').innerHTML = `${user.fullName}`;
+document.getElementById('detail').innerText = `My name is ${user.fullName} and my age is ${user.userAge} year old and my gmail is ${user.userEmail} and you conract me on there ${user.userPhoneNo}`
+</script>
+</body>
+</html>

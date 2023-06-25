@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Document</title>
+   <link rel="stylesheet" href="Cascading.css">
+</head>
+<body>
+   <div id = "form1">
+  <div class="container">
+
+    <h2>Signup Form</h2>
+
+    <!-- <form id="signup-form"> -->
+      <div class="form-group ">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="password-toggle" onclick="togglePasswordVisibility()"></span>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="icon">Show Icon:</label>
+        <input type="file" id="icon" name="icon">
+      </div>
+      <div class="form-group">
+        <center><p id = "errorShow"> </p> </center>
+        <input type="submit" value="Signup" class="submit-btn" onclick = "mainFunc()">
+        <input type="reset" value="Clear" class="clear-btn">
+      </div>
+    <!-- </form> -->
+  </div>
+</div>
+
+<script src = "JavaSingUp.js"></script>
+</body>
+</html>
